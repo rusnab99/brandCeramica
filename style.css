@@ -1,0 +1,372 @@
+@media all {
+#header {
+    height: 12vh;
+    min-height: 4em;
+    display: flex;
+    margin: 0em auto;
+    padding: 1em;
+    width: 82vw;
+}
+
+img#logo {
+    height: inherit;
+    min-height: inherit;
+}
+    div#menu-mobile,.mobile-menu {display: none}
+
+header a {
+    height: inherit;
+    min-height: inherit;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+div#menu {
+    display: flex;
+    margin: auto auto;
+    width: 36vw;
+    background: rgba(0,0,0,0.7);
+    border-radius: 4vh;
+    padding: 0.5em 2em;
+}
+
+header
+{
+    background: url(img/granit-pattern.jpg), rgba(255,255,255,0.46);
+    background-blend-mode: color;
+}
+
+body {
+    margin: 0;
+}
+
+li {
+    display: block;
+    margin: auto;
+}
+
+#menu a{
+    padding: 0.3em 1em;
+}
+
+#menu a:hover {
+    border-radius: 4vh;
+    padding: 0.3em 1em;
+    background: black;
+}
+
+div#phone {
+    background: rgba(0,0,0,0.7);
+    font-size: 1.5em;
+    color: white;
+    border-radius: 5vh;
+    margin: auto;
+    padding: 0.3em 2em;
+}
+
+#banner{
+    background: url(img/stylish.jpg);
+    height: 391px;
+    background-size: cover;
+    padding-top: 8vh;
+}
+
+.infoPanel
+{
+    background: rgba(0,0,0,0.7);
+    padding: 1em;
+    color: white;
+}
+
+div#bannerInfo {
+    width: 37vw;
+    margin: 0vh 4vw;
+    padding: 2em;
+    font-size: 2em;
+}
+
+.collectionCard {
+    width: 19.5em;
+    height: 21em;
+    max-width: 26em;
+    max-height: 28em;
+    min-width: 13em;
+    min-height: 14em;
+    display: inline-grid;
+    margin: 0.3em;}
+
+.collectionCard a img {
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    min-width: inherit;
+    min-height: inherit;
+    z-index: 1;
+}
+
+.collectionCard a {
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    min-width: inherit;
+    min-height: inherit;
+}
+
+.collectionCard span.infoPanel {
+    z-index: 9;
+    margin: -4em 1em;
+    display: inline-block;
+}
+
+.catalogue {
+    display: table;
+}
+
+.brand {
+    margin: 5em 10vw;
+}
+
+.brandName {
+    font-size: 4em;
+}
+
+.collectionCard.getFull {
+    background: rgba(0,0,0,0.8);
+    vertical-align: bottom;
+}
+
+a.getFull {
+
+    width: 1em;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: white;
+    margin: 2em;
+}
+
+footer {
+    background: rgba(0,0,0,0.9);
+    color: white;
+    padding: 3em;
+}
+
+div#address {
+    margin: auto;
+    width: fit-content;
+}
+
+div#copyright {
+    width: fit-content;
+    margin: 3em 0 0 auto;
+    font-size: 9pt;
+}
+
+#copyright a {
+    color: white;
+}
+
+.collection img {
+    width: 100%;
+}
+
+.collection {
+    margin: auto auto 2em auto;
+    width: 80%;
+}
+
+span#collectionName {
+    font-size: xxx-large;
+}
+
+span.sectionName {
+    font-size: larger;
+}
+
+div#spec {
+    display: block;
+}
+
+#spec img {
+    height: 3em;
+    width: 3em;
+    margin: 0.5em;
+}
+
+div#collectionPhone {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.about {
+    width: 80%;
+    margin: 2em auto;
+    color: white;
+    font-size: 1.2em;
+    padding: 2em;
+    border-radius: 4vh;
+    background: rgba(0,0,0,0.8);
+}
+
+.shop {
+    color: white;
+    width: 80%;
+    font-size: 1.4em;
+    margin: 2em auto;
+    background: rgba(0,0,0,0.9);
+    padding: 1em;
+    border-radius: 4vh;
+}
+}
+
+
+@media screen  and (max-width: 980px)
+{
+    div#menu {
+        display: none;
+    }
+    div#menu {
+         overflow: hidden;
+     }
+    div#phone {
+        display: none;
+    }
+    #header {
+        height: auto;
+        display: flex;
+    }
+
+    img#logo {
+        height: 1em;
+    }
+
+    div#menu {
+        width: 53vw;
+
+    }
+
+    #header
+    div {
+        margin: 1em auto;
+    }
+
+    div#phone {
+        width: fit-content;
+    }
+
+    div#bannerInfo {
+        width: fit-content;
+    }
+
+    .collectionCard {
+        width: 48%;
+        height: fit-content;
+        max-width: 26em;
+        display: inline-grid;
+        margin: 0.3em;
+    }
+
+    .collectionCard a {
+        width: 100%;
+    }
+
+    a.getFull {
+        width: 1em;
+    }
+
+    .collectionCard {
+        height: 49vw;
+    }
+
+    .mobile-menu {
+        border: black solid thin;
+        border-radius: 112em;
+        padding: 0.6em 0.8em;
+        width: min-content;
+        font-weight: 1000;
+        margin: auto 0 auto auto !important;
+    }
+
+    #close-menu {
+        display: none;
+    }
+    #open-menu{display: block;}
+    div#menu-mobile {
+        background: rgba(0,0,0,0.7);
+        width: 80vw;
+        margin: 0 auto;
+        padding: 6vw;
+        border-radius: 4em;
+        color: white;
+        font-size: x-large;
+        transform: scaleY(0);
+        display: none;
+    }
+}
+@media screen and (max-width: 650px)
+{
+    .collectionCard {
+    width: 100%;
+    height: fit-content;
+    max-width: 26em;
+    display: inline-grid;
+    margin: 0.3em;
+}
+}
+
+@media screen and (max-width: 480px)
+{
+    .collectionCard {
+    width: 100%;
+    height: fit-content;
+    max-width: 26em;
+    display: inline-grid;
+    margin: 0.3em;
+}
+
+    .catalogue {
+        width: auto;
+        max-width: 64vw;
+    }
+
+    .brand {
+        width: auto;
+    }
+
+    .collectionCard a img {
+        width: auto;
+        max-width: 80vw;
+        height: auto;
+    }
+
+    .collectionCard a {
+        width: min-content;
+        max-width: 80vw;
+        /* margin: 0 2vw  16vw 0; */
+    }
+
+    .collectionCard {
+        width: auto;
+    }
+
+    div#bannerInfo {
+        max-width: 100vw;
+    }
+
+    div#bannerInfo {
+        width: auto;
+        font-size: x-large;
+    }
+
+    .collectionCard.getFull {
+        width: auto;
+        max-width: 80vw;
+    }
+
+    a.getFull {
+        margin: 1em;
+    }
+}
+
