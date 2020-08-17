@@ -1,10 +1,10 @@
 <?php
 $host='localhost'; // имя хоста (уточняется у провайдера)
-$database='db_name'; // имя базы данных, которую вы должны создать
+$database='db_brandceramica'; // имя базы данных, которую вы должны создать
 $user='admin'; // заданное вами имя пользователя, либо определенное провайдером
 $pswd=''; // заданный вами пароль
 
-//$dbh = mysql_connect($host, $user, $pswd) or die("Не могу соединиться с MySQL.");
+$dbh = mysqli_connect($host, $user, $pswd,$database) or die("Не могу соединиться с MySQL.");
 
 function isAdmin()
 {

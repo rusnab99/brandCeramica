@@ -7,91 +7,28 @@
 					</span>
         </div>
     </div>
-
+<?php $query="SELECT * FROM `brands` ";
+$brands=mysqli_query($dbh,$query);
+foreach ($brands as $brand){
+    $query="SELECT * FROM `collections` WHERE `brand`=".$brand["id"];
+    $collections=mysqli_query($dbh,$query);
+    //echo var_dump($collections);
+    if ($collections->num_rows>0){?>
     <div class="brand">
         <div class="brandName">
-            <span>Decovita</span>
+            <span><?=$brand["name"]?></span>
         </div>
         <div class="catalogue">
+            <?php
+            foreach ($collections as $collection){?>
             <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
+                <a href="brand/?collection=<?=$collection["id"]?>"><img src="<?=$collection["mainPhoto"]?>"><span class="infoPanel"><?=$collection["name"]?></span> </a>
             </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <diбv class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </diбv>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
+<?php }?>
             <div class="collectionCard getFull">
-                <a href="brand/?brand=decovita/" class="getFull">Посмотреть все коллекции Decovita</a>
+                <a href="brand/?brand=<?=$brand["id"]?>/" class="getFull">Посмотреть все коллекции <?=$brand['name']?></a>
             </div>
         </div>
     </div>
-    <div class="brand">
-        <div class="brandName">
-            <span>QUA</span>
-        </div>
-        <div class="catalogue">
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard">
-                <a href="brand/?brand=decovita&collection=nickel"><img src="img/NICKEL.jpg"><span class="infoPanel">NICKEL</span> </a>
-            </div>
-            <div class="collectionCard getFull">
-                <a href="brand/?brand=decovita/" class="getFull">Посмотреть все коллекции QUA</a>
-            </div>
-        </div>
-    </div>
+    <?php }}?>
 </main>

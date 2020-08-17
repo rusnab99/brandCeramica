@@ -1,4 +1,12 @@
 @media all {
+    html{
+        background: white;
+        font-family: Consolas;
+        background: url(img/BACK.jpg), rgba(255,255,255,0.46);
+        background-blend-mode: color;
+
+    }
+
 #header {
     height: 12vh;
     min-height: 4em;
@@ -33,7 +41,8 @@ div#menu {
 
 header
 {
-    background: url(img/granit-pattern.jpg), rgba(255,255,255,0.46);
+    /*background: url(img/granit-pattern.jpg), rgba(255,255,255,0.46);*/
+    background: url(img/BACK.jpg), rgba(0,0,0,0.1);
     background-blend-mode: color;
 }
 

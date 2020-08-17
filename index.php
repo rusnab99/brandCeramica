@@ -14,6 +14,7 @@ $routes = [
     '/\/about/m' => 'about',
     '/\/exit/m' => 'leave',
     '/\/contacts/m' => 'contacts',
+    '/\/addCollection/m' => 'addCollection',
     '/\/main/m' => 'main'
 ];
 
@@ -50,6 +51,10 @@ function about($path) {
 
 function contacts($path) {
     return 'contacts.php';
+}
+
+function addCollection($path) {
+    return 'addCollection.php';
 }
 
 function leave($path) {

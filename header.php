@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title><?=$title;?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="<?=$_SERVER["REQUEST_SCHEME"].'s://'.$_SERVER["HTTP_HOST"]?>/style.css" >
+    <link rel="stylesheet" type="text/css" href="<?='https://'.$_SERVER["HTTP_HOST"]?>/style.css" >
     <script>
         function f() {
             var menu= document.getElementById('menu-mobile');
